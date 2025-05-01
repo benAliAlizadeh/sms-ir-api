@@ -1,0 +1,28 @@
+﻿
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    text-align: right;
+}
+
+.btn {
+    margin: 0.5rem;
+}
+
+.navbar-nav {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+}

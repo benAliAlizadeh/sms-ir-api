@@ -1,0 +1,30 @@
+﻿@page
+@model sms_ir_api.Pages.VerifyOtpModel
+
+<h2>تأیید کد OTP</h2>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+else if (ModelState.ContainsKey("Otp.Code"))
+{
+    <div class="alert alert-danger">@ModelState["Otp.Code"].Errors[0].ErrorMessage</div>
+}
+
+<form method="post" dir="rtl">
+    <div class="form-group">
+        <label asp-for="Otp.Mobile">شماره موبایل</label>
+        <input asp-for="Otp.Mobile" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="Otp.Code">کد تأیید</label>
+        <input asp-for="Otp.Code" class="form-control" placeholder="کد 6 رقمی" />
+        <span asp-validation-for="Otp.Code" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">تأیید کد</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
