@@ -90,9 +90,6 @@ sms-ir-api/
 ## Contributing
 Contributions are welcome! Feel free to submit Issues or Pull Requests to enhance the project.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
-
 ## Persian Description (توضیحات فارسی)
 این پروژه یه کلاینت ساده برای API پیامکی SMS.ir هست که با ASP.NET Core 9 ساخته شده. می‌تونید باهاش پیامک تکی یا گروهی بفرستید و کد تأیید (OTP) برای اعتبارسنجی شماره موبایل ارسال کنید. رابط کاربری کاملاً فارسی و راست‌به‌چپ (RTL) داره و با فونت زیبای Vazirmatn طراحی شده. برای اطلاعات بیشتر، بخش‌های بالا رو بخونید یا با من تماس بگیرید.
 
